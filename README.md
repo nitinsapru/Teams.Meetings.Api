@@ -1,7 +1,7 @@
 # Microsoft.Teams.Api
 
-This project contains the source code for the nuget package Microsoft.Teams.Api which is built on top of the Microsoft Teams RESTFul APIs which are bundled as a part of Microsoft Graph APIs package. This project provides more context into object oriented framework for below mentioned actions:<br>
-<b>1. Task<OnlineMeeting> GetOnlineMeetingsAsync(string meetingId)</b><br>
+This project contains the source code for the nuget package Microsoft.Teams.Api which is built on top of the Microsoft Teams RESTFul APIs which are bundled as a part of Microsoft Graph APIs package. This project provides more context into object oriented framework for below mentioned actions:<br><br>
+<b><u>1. `Task<OnlineMeeting> GetOnlineMeetingsAsync(string meetingId)`</u></b><br>
    Get Microsoft Teams online meetings information along with attendants (both invited & from lobby).
 
 ## Build
