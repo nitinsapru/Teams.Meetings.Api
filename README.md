@@ -1,5 +1,17 @@
-<h3>Microsoft.Teams.Api<h3>
-<br>
+# Microsoft.Teams.Api
 
-This repository contains the source code for class library which provides extensions on top of the Microsoft Teams APIs which are exposed as a part of <br>
-Microsoft Graph APIs package.
+This project contains the source code for the nuget package Microsoft.Teams.Api which is built on top of the Microsoft Teams RESTFul APIs which are bundled as a part of Microsoft Graph APIs package. This project provides more context into object oriented framework for below mentioned actions:
+<b>1. Task<OnlineMeeting> GetOnlineMeetingsAsync(string meetingId)</b>
+   Get Microsoft Teams online meetings information along with attendants (both invited & from lobby).
+
+## Build
+
+Run `dotnet build` for a compiling the codebase locally or on any .NET Runtime based terminal. Once completed, you can import the same into any project which can used the class library as an either a Nuget package or a project reference.
+
+## Running unit tests
+
+Run `dotnet test` for running unit test cases on the solution.
+
+## Further help
+
+To get more help on the Dotnet CLI use `dotnet help` or go check out the [Dotnet Standards Documentations](https://docs.microsoft.com/en-gb/dotnet/standard/net-standard) page.
