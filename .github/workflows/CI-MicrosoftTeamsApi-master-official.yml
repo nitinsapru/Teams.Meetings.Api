@@ -21,3 +21,7 @@ jobs:
       run: dotnet restore
     - name: Build the solution (with warnings)
       run: dotnet build --no-restore
+    - name: Pack the library
+      run: dotnet pack '*.csproj' --output nuget-packages --configuration Release
+    - name: Publish the library to nuget.org
+      run: dotnet nuget push '*.nupkg' --api-key oy2pbxpivyo4wqe3dkqagjkgpxmdiabedeqqmv3yuwcx6a --source https://api.nuget.org/v3/index.json
