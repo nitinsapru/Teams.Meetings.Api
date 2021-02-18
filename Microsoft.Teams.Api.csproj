@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).1.2.$([System.DateTime]::UtcNow.ToString(yyyyHHmmss)).1.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <Version>$([System.DateTime]::UtcNow.ToString(yyyy)).
              $([System.DateTime]::UtcNow.ToString(MM)).
              $([System.DateTime]::UtcNow.ToString(dd)).
