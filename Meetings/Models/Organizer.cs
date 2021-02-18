@@ -1,13 +1,18 @@
-﻿using System;
-using Newtonsoft.Json;
-
-namespace Microsoft.Teams.Api.Meetings.Models
+﻿namespace Microsoft.Teams.Api.Meetings.Models
 {
+    /// <summary>
+    ///     Represents the organizer of the meeting.
+    /// </summary>
     public class Organizer
     {
-        [JsonProperty("@odata.type")]
-        public string OdataType { get; set; }
+        /// <summary>
+        ///     Gets or sets the identity of the user who is the organizer of the meeting.
+        /// </summary>
         public Identity Identity { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the Upn for the organizer of the meeting.
+        /// </summary>
         public string Upn { get; set; }
     }
 }

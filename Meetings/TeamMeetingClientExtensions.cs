@@ -2,6 +2,7 @@
 using Microsoft.Teams.Api.Meetings.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Teams.Meetings.Api.Meetings.Exceptions;
 
 namespace Microsoft.Teams.Api.Meetings
 {
@@ -29,7 +30,8 @@ namespace Microsoft.Teams.Api.Meetings
 
                 if (jsonDeserializedObject == null)
                 {
-                    return default;
+                    throw new InvalidResponseFromTeamsApi(
+                        $"Failed to get valid response from Teams graph api {Constants.OnlineMeetingsApi}");
                 }
 
                 return jsonDeserializedObject;
