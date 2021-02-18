@@ -31,4 +31,4 @@ jobs:
         name: Microsoft.Teams.Api.SourceCode
         path: /home/runner/work/Microsoft.Teams.Api/Microsoft.Teams.Api/bin/Release/netstandard2.1
     - name: Publish the library to nuget.org
-      run: dotnet nuget push /home/runner/work/Microsoft.Teams.Api/Microsoft.Teams.Api/nuget-packages/*.nupkg --api-key oy2pbxpivyo4wqe3dkqagjkgpxmdiabedeqqmv3yuwcx6a --source https://api.nuget.org/v3/index.json --skip-duplicate
+      run: dotnet nuget push /home/runner/work/Microsoft.Teams.Api/Microsoft.Teams.Api/nuget-packages/*.nupkg --api-key ${{ secrets.NUGETPACKAGEAPIKEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
