@@ -9,6 +9,7 @@ namespace Microsoft.Teams.Api.Meetings
         ///     Gets the online meeting information.
         /// </summary>
         /// <param name="meetingId">The meeting id of the teams meeting.</param>
+        /// <exception cref="InvalidResponseFromTeamsApi"></exception>
         /// <returns>The online meeting information.</returns>
         Task<OnlineMeeting> GetOnlineMeetingsAsync(string meetingId);
     }

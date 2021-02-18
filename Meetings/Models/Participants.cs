@@ -1,13 +1,20 @@
 ﻿using System.Collections.Generic;
-using Newtonsoft.Json;
 
 namespace Microsoft.Teams.Api.Meetings.Models
 {
+    /// <summary>
+    ///     Represents the participants of the meeting.
+    /// </summary>
     public class Participants
     {
-        [JsonProperty("@odata.type")]
-        public string OdataType { get; set; }
+        /// <summary>
+        ///     Gets or sets the list of attendees of the meeting.
+        /// </summary>
         public IList<Attendee> Attendees { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the organizer of the meeting.
+        /// </summary>
         public Organizer Organizer { get; set; }
     }
 }
