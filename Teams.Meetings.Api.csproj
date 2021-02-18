@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Year>$([System.DateTime]::Now.ToString("yy"))</Year>
+    <Year>$([System.DateTime]::Now.ToString("yyyy"))</Year>
     <Month>$([System.DateTime]::Now.ToString("MM"))</Month>
     <Date>$([System.DateTime]::Now.ToString("dd"))</Date>
-    <Time>$([System.DateTime]::Now.ToString("HHmmss"))</Time>
+    <Time>$([System.DateTime]::Now.ToString("HHmm"))</Time>
     <TargetFramework>netstandard2.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
